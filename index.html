@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+                </div>
+            <div class="display">
+                <input type="text" placeholder="0" name="displayResult" />
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <input type="button" name="b7" value="7" onclick = "form.displayResult.value += '7' ">
+                    <input type="button" name="b8" value="8" onclick = "form.displayResult.value += '8' ">
+                    <input type="button" name="b9" value="9" onclick = "form.displayResult.value += '9' ">
+                    <input type="button" name="addb" value="+" onClick= "form.displayResult.value += '+' ""calcNumbers(addb.value)">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b4" value="4" onClick= "form.displayResult.value += '4' ">
+                    <input type="button" name="b5" value="5" onClick="form.displayResult.value += '5' ""calcNumbers(b5.value)">
+                    <input type="button" name="b6" value="6" onClick="form.displayResult.value += '6' ""calcNumbers(b6.value)">
+                    <input type="button" name="subb" value="-" onClick="form.displayResult.value += '-' ""calcNumbers(subb.value)">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b1" value="1" onClick="form.displayResult.value += '1' ""calcNumbers(b1.value)">
+                    <input type="button" name="b2" value="2" onClick="form.displayResult.value += '2' ""calcNumbers(b2.value)">
+                    <input type="button" name="b3" value="3" onClick="form.displayResult.value += '3' ""calcNumbers(b3.value)">
+                    <input type="button" name="mulb" value="*" onClick="form.displayResult.value += '*' ""calcNumbers(mulb.value)">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b0" value="0" onClick="form.displayResult.value += '0' ""calcNumbers(b0.value)">
+                    <input type="button" name="potb" value="." onClick="form.displayResult.value += '.' ""calcNumbers(potb.value)">
+                    <input type="button" name="divb" value="/" onClick="form.displayResult.value += '/' ""calcNumbers(divb.value)">
+                    <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+                </div>
+
+                <div class="row">
+                   <input type="button" name="clrb" value="AC" onClick="form.displayResult.value=''""clrNumber">
+                   <input type="button" name="delb" value="DEL" onClick="form.displayResult.value=''""delNumber">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
+
